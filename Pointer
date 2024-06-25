@@ -1,0 +1,137 @@
+//Pointer
+
+//#include<iostream>
+//using namespace std;
+//int main(){
+//	int a = 10;
+//	int *ptr = &a;
+//	
+//	int **pptr2 = &ptr;
+//	cout << &ptr << " = " << pptr << "\n";
+//	
+//	float pi = 3.14;
+//	float * ptr2 = &pi;
+//	
+//	cout << sizeof(ptr) << "\n";
+//	cout << sizeof(ptr2) << "\n";
+//	
+//	cout << &pi << " = " << ptr2 << "\n";
+//	cout << &a << " = " << ptr << "\n";
+//	cout << &a << "\n";
+//	return 0;
+//}
+
+//#include<iostream>
+//using namespace std;
+//
+//int main(){
+//	int a = 10;
+//	int *ptr = &a;
+//	
+//	cout << ptr << "\n";
+//	cout << *ptr << "\n";
+//	return 0;
+//}
+
+
+//#include<iostream>
+//using namespace std;
+//
+//int main(){
+//	int *ptr = NULL;
+//	cout << ptr << "\n"; 
+//	cout << *ptr << "\n"; //segmentation fault
+//	return 0;
+//}
+
+//pass by value
+
+//#include<iostream>
+//using namespace std;
+//
+//void changeA(int a){
+//	a = 20;
+//	cout << a << "\n";
+//}
+//
+//int main(){
+//	int a = 10;
+//	changeA(a);
+//	cout << a << "\n";
+//	return 0;
+//}
+
+//pass by reference using pointer
+//
+//#include<iostream>
+//using namespace std;
+//
+//void changeA(int *ptr){
+//	*ptr = 20;
+//	cout << *ptr << "\n";
+//}
+//
+//int main(){
+//	int a = 10;
+//	changeA(&a);
+//	
+//	cout << a << "\n";
+//	return 0;
+//}
+
+
+
+//#include<iostream>
+//using namespace std;
+
+//pass by reference using reference variable
+//void changeA(int &param){
+//	param = 20;
+//	cout << param << "\n";
+//}
+//
+//int main(){
+//	int a = 10;
+//	changeA(a);
+//	cout << a << "\n";
+//	return 0;
+//}
+
+
+//Q What will ptr2 point to in the following code:
+
+//#include<iostream>
+//using namespace std;
+//
+//int main(){
+//	int x = 5, y = 10;
+//	int *ptr1 = &x, *ptr2 = &y;
+//	ptr2 = ptr1;
+//	
+//	cout << ptr2 << "\n";
+//	cout << ptr1 << "\n";
+//	cout << &x << "\n";
+//	return 0;
+//}
+
+//What is the type of a & b;
+
+//#include<iostream>
+//using namespace std;
+//
+//int main(){
+//	float* a, b;
+//	
+//	return 0;
+//}
+
+//Can we initialize a pointer with value 0 ?
+
+//#include<iostream>
+//using namespace std;
+//
+//int main(){
+//	int *ptr = 0;
+//	cout << ptr << "\n";
+//	return 0;
+//}
