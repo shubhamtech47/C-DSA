@@ -1,0 +1,182 @@
+//2D Array
+
+//#include<iostream>
+//using namespace std;
+
+//int main(){
+//	int students[3][3] = {{100,100,100},{85,74,89},{63,72,65}};
+//	cout << students[1][1] << endl;
+//	return 0;
+//}
+
+//Input & Output
+
+//#include<iostream>
+//using namespace std;
+
+//int main(){
+//	int arr[3][4];
+//	int n = 3, m = 4;
+//	
+//	for(int i=0; i<n; i++){
+//		for(int j=0; j<m; j++){
+//			cin >> arr[i][j];
+//		}
+//	}
+//	
+//	for(int i=0; i<n; i++){
+//		for(int j=0; j<m; j++){
+//			cout << arr[i][j] << " ";
+//		}
+//		cout << endl;
+//	}
+//	return 0;
+//}
+
+
+//Spiral Matrix
+
+
+//#include<iostream>
+//using namespace std;
+
+//void spiralMatrix(int mat[][4], int n, int m){
+//	int srow = 0, scol = 0;
+//	int erow = n-1, ecol = m-1;
+//	while(srow <= erow && scol <= ecol){
+//			//top
+//	for(int j=scol; j<=ecol; j++){
+//		cout << mat[srow][j] << " ";
+//	}
+//	//right
+//	for(int i=srow+1; i<=erow; i++){
+//		cout << mat[i][ecol] << " ";
+//	}
+//	//bottom
+//	for(int j=ecol-1; j>=scol; j--){
+//		if(srow == erow){ //middle
+//			break;
+//		}
+//		cout << mat[erow][j] << " ";
+//	}
+//	//left
+//	for(int i=erow-1; i>=srow+1; i--){
+//		cout << mat[i][scol] << " ";
+//	}
+//	
+//	srow++; scol++;
+//	erow--; ecol--;
+//	}
+//	
+//	cout << endl;
+//}
+//
+//int main(){
+//	int matrix[4][4] = {{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};
+//	spiralMatrix(matrix, 4 ,4);
+//	return 0;
+//}
+
+
+//Diagonal Sum
+
+//#include<iostream>
+//using namespace std;
+//
+//int diagonalSum(int mat[][4], int n){
+//	int sum = 0;
+//	
+//	//O(N^2)
+//	for(int i=0; i<n; i++){ // rows
+//		for(int j=0; j<=n; j++){ //cols
+//			if(i == j){
+//				sum += mat[i][j];
+//			}else if(j == n-i-1){
+//				sum += mat[i][j];
+//			}
+//		}
+//	}
+//	cout << "sum = " << sum << endl;
+//	return sum;
+//}
+//
+//int main(){
+//	int matrix[4][4] = {{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};
+//	diagonalSum(matrix, 4);
+//	return 0;
+//}
+
+
+//Search in Sorted Matrix
+
+//#include<iostream>
+//using namespace std;
+//
+//bool search(int mat[][4], int n, int m, int key){
+//	int i = 0, j = m - 1;
+//	
+//	while(i < n && j >= 0){
+//		if(mat[i][j] == key){
+//			cout << "found at cell (" << i << "," << j << ")\n";
+//			return true;
+//		}else if(mat[i][j] > key){
+//			//left
+//			j--;
+//		}else{
+//			//down
+//			i++;
+//		}
+//	}
+//	
+//	cout << "key not found\n";
+//	return false;
+//}
+//
+//int main(){
+//	int matrix[4][4] = {{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};
+//	search(matrix, 4, 4, 14);
+//	return 0;
+//}
+
+
+//Matrix Pointer
+
+//#include<iostream>
+//using namespace std;
+//
+//
+//int main(){
+//	int mat[4][4] = {{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};
+//	cout << mat << endl;
+//	cout << mat << " = " << &mat[0][0] << endl;
+//	cout << mat + 1 << " != " << &mat[0][1] << endl;
+//	cout << mat +1 << " = " << &mat[1][0] << endl;
+//	return 0;
+//}
+ 
+
+//Formula
+//ptr[i][j] = *(*(ptr + i) + j)
+
+//#include<iostream>
+//using namespace std;
+//
+//void func(int mat[][4], int n, int m){
+//	cout << "0th row ptr " << mat << endl;
+//	cout << "1st row ptr " << mat+1 << endl;
+//	cout << "2nd row ptr " << mat+2 << endl;
+//	
+//	cout << "0th row value " << *mat << endl;
+//	cout << "1st row value " << *(mat+1)<< endl;
+//	cout << "2nd row value " << *(mat+2)<< endl;
+//}
+//
+//void func2(int (*mat)[4], int n, int m){
+//	
+//}
+//
+//int main(){
+//	int mat[4][4] = {{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};
+//	func(mat, 4, 4);
+//	return 0;
+//}
