@@ -1,0 +1,251 @@
+//Revisit Char Data Type
+
+//#include<iostream>
+//using namespace std;
+//
+//int main(){
+//	char ch = 'f';
+//	int pos = ch - 'a';
+//	cout << pos << endl;
+//	return 0;
+//}
+
+//Character Array
+
+//#include<iostream>
+//using namespace std;
+//
+//int main(){
+//	char arr[5] = {'a','b','c','d','e'};
+//	cout << arr[0] << endl;
+//	cout << arr[1] << endl;
+//	cout << arr[2] << endl;
+//	cout << arr[3] << endl;
+//	cout << arr[4] << endl;
+//	return 0;
+//}
+
+
+//Input Char Array
+
+//#include<iostream>
+//using namespace std;
+//
+//int main(){
+//	char word[10];
+//	cin >> word; //ignore whitespace
+//	
+//	cout << "your word was : " << word << endl;
+//	return 0;
+//}
+
+
+//#include<iostream>
+//using namespace std;
+//
+//int main(){
+//	char sentence[10];
+//	cin.getline(sentence,30);
+//	
+//	cout << "your word was : " << sentence << endl;
+//	return 0;
+//}
+
+
+//convert to UpperCase
+
+//#include<iostream>
+//#include <cstring>
+//using namespace std;
+//
+//void toUpper(char word[], int n){
+//	
+//	for(int i=0; i<n; i++){
+//		char ch = word[i];
+//		if(ch>='A' && ch<='Z'){ // upper
+//			continue;
+//		}else{ //lowercase
+//			word[i] = ch - 'a' + 'A';
+//		}
+//	}
+//}
+//
+//int main(){
+//	char word[] = "ApPle";
+//	toUpper(word, strlen("word"));
+//	
+//	cout << word << endl;
+//	return 0;
+//}
+
+
+//Reverse a char Array
+
+//#include<iostream>
+//#include <cstring>
+//using namespace std;
+//
+//void toUpper(char word[], int n){
+//	
+//	for(int i=0; i<n; i++){
+//		char ch = word[i];
+//		if(ch>='A' && ch<='Z'){ // upper
+//			continue;
+//		}else{ //lowercase
+//			word[i] = ch - 'a' + 'A';
+//		}
+//	}
+//}
+//
+//void reverse(char word[], int n){
+//	int st = 0, end = n-1;
+//	while(st < end){
+//		swap(word[st], word[end]);
+//		st++;
+//		end--;
+//	}
+//}
+//
+//int main(){
+//	char word[] = "code";
+//	reverse(word, strlen(word));
+//	cout << "reverse = " << word << endl;
+//	return 0;
+//}
+
+
+//Valid Palindrome
+
+//#include<iostream>
+//#include <cstring>
+//using namespace std;
+
+//bool isPalindrome(char str[], int n){
+//	int st = 0, end = n-1;
+//	while(st < end){
+//		if(str[st++] != str[end--]){
+//			cout << "not valid palindrome\n";
+//			return false; 
+//		}
+//	}
+//	
+//	cout << "valid palindrome\n";
+//	return true;
+//}
+//
+//int main(){
+//	char word[] = "racecar";
+//	isPalindrome(word, strlen(word));
+//	return 0;
+//}
+
+
+//#include<iostream>
+//#include<cstring>
+//using namespace std;
+
+//int main(){
+//	char str1[100];
+//	//str1 = "apna college";
+//	strcpy(str1, "apna college");
+//	cout << str1 << endl;
+//	return 0;
+//}
+
+
+//#include<iostream>
+//#include<cstring>
+//using namespace std;
+//
+//int main(){
+//	char str1[100] = "abc";
+//	char str2[100] = "xyz";
+//	strcat(str1, str2);
+//	cout << str1 << endl;
+//	return 0;
+//}
+
+
+//#include<iostream>
+//#include<cstring>
+//using namespace std;
+//
+//int main(){
+//	char str1[100] = "mango";
+//	char str2[100] = "strawberry";
+//	cout << strcmp(str1, str2) << endl;
+//	return 0;
+//}
+
+
+//string in c++
+//Input from user
+
+//#include<iostream>
+//#include<cstring>
+//using namespace std;
+//
+//int main(){
+//	string str = "hello";
+//	cout << str << endl;
+//	str = "yellow";
+//	cout << str << endl;
+//	return 0;
+//}
+
+//#include<iostream>
+//#include<cstring>
+//using namespace std;
+//
+//int main(){
+//	string str;
+//	getline(cin, str);
+//	cout << str << endl;
+//	return 0;
+//}
+
+
+//for each loop
+
+//#include<iostream>
+//#include<cstring>
+//using namespace std;
+//
+//int main(){
+//	string str = "apna college";
+//	
+//	for(int i=0; i<str.length(); i++){
+//		cout << str[i] << " ";
+//	}
+//	cout << "\n";
+//	return 0;
+//}
+
+
+//#include<iostream>
+//#include<cstring>
+//using namespace std;
+//
+//int main(){
+//	string str = "apna college";
+//	
+//	for(char ch : str){
+//		cout << ch << ",";
+//	}
+//	cout << endl;
+//	return 0;
+//}
+
+
+//String Member Function
+
+//#include<iostream>
+//#include<cstring>
+//using namespace std;
+//
+//int main(){
+//	string str = "helloworld";
+//	
+//	cout << str.substr(1, 5) << endl;
+//	return 0;
+//}
